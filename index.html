@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="logo">
+        <div class="nav">
+            <h1>Home</h1>
+            <h1>About</h1>
+            <h1>Menu</h1>
+            <h1>Contact</h1>
+        </div>
+        <div class="menu">
+        <img onclick=showSideBar() class="menuImage" src="menu.png" alt="">
+    </div>
+    </div>
+    <div class="content">
+        <div class="left">
+            <h1>
+                Fresh <span>Coffee</span> in <br/>the <span>Morning</span>
+            </h1>
+            <h2>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo veniam porro ea tenetur veritatis. Quisquam voluptas vero ab facere ex, veniam minus perspiciatis labore iusto perferendis odit maiores alias nemo.
+            </h2>
+            <a href="#"> <h2>order now</h2></a>
+
+        </div>
+            <div class="sidebar">
+        <img onclick=closeSideBar() src="close.png" alt="">
+        <h1>Home</h1>
+        <h1>About</h1>
+        <h1>Menu</h1>
+        <h1>Contact</h1>
+    </div>
+        <div class="right">
+            <img src="cup.png" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <img src="insta.png" alt="">
+        <img src="whatsapp.png" alt="">
+        <img src="mail.png" alt="">
+        <img src="x.png" alt="">
+    </div>
+</body>
+<script>
+    let sidebar = document.querySelector(".sidebar")
+    function showSideBar(){
+        sidebar.style.display = "flex"
+    }
+
+    function closeSideBar(){
+        sidebar.style.display = 'none'
+    }
+
+</script>
+</html>
